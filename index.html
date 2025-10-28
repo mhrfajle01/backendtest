@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemini</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="welcome-screen" class="screen active">
+            <div class="gemini-logo"></div>
+            <h1>Welcome to Gemini</h1>
+            <button id="enter-btn">Enter</button>
+        </div>
+
+        <div id="auth-screen" class="screen">
+            <div class="form-container">
+                <div id="login-form" class="form active">
+                    <h2>Login</h2>
+                    <form id="login">
+                        <input type="email" id="login-email" placeholder="Email" required>
+                        <div class="password-container">
+                            <input type="password" id="login-password" placeholder="Password" required>
+                            <span class="toggle-password">👁️</span>
+                        </div>
+                        <button type="submit">Login</button>
+                    </form>
+                    <p>Don't have an account? <a href="#" id="show-signup">Sign up</a></p>
+                </div>
+
+                <div id="signup-form" class="form">
+                    <h2>Sign Up</h2>
+                    <form id="signup">
+                        <input type="text" id="signup-username" placeholder="Username" required>
+                        <input type="email" id="signup-email" placeholder="Email" required>
+                        <div class="password-container">
+                            <input type="password" id="signup-password" placeholder="Password" required>
+                            <span class="toggle-password">👁️</span>
+                        </div>
+                        <button type="submit">Sign Up</button>
+                    </form>
+                    <p>Already have an account? <a href="#" id="show-login">Login</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div id="admin-screen" class="screen">
+            <h2>Admin Panel</h2>
+            <div id="user-list"></div>
+            <button id="logout-btn">Logout</button>
+        </div>
+
+        <div id="feedback-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
